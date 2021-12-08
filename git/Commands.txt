@@ -1,0 +1,93 @@
+" Hi humans!
+
+git config --global user.email "xx@gmail.com"
+git config --global user.name "xx"
+git config --global --list
+
+
+
+" Hi humans!
+" Learning GIT in VSCode
+
+git init
+ " Git is tracking my changes.
+
+git branch -M main
+
+git add first_file.txt
+ " from working directory to staging index
+git add .
+git add filename.ht*
+
+git commit -m "commit description"
+ " from staging index to repository
+ " git commit -a , git commit --all, 
+
+git remote add origin https://github.com/robert853000/demos.git
+git push -u origin main
+
+git status
+
+git diff
+ " compares working directory
+git diff --staged
+ " changes in staging area
+git diff 
+ " Format: spacebar, f,b (forward backward) , -s, 
+git diff --color-words
+ " show only different words
+
+git rm file_to_delete2.txt
+" Using the "--cached" option with git rm will remove the file from the index without affecting the local copy.
+
+git mv ./Git/file_to_delete2.txt ./Git/renamed_file.txt
+
+rm -f .git/index.lock 
+
+
+" inspecting changes :
+" improves collaboration
+git log --oneline
+git log 
+git log --author="Rob"
+git show ID
+git diff 734d024a3831cc3c75625c2b44d1d3e69b75702f..51fa9dacffff463919ad8d23042c996fb6516f42 --color-words
+
+ " restore change:
+git checkout -- <file>
+git checkout -- .
+ " restore all files
+
+
+git reset HEAD filename.html
+ "  Git will reset the filename.html in the staging index with the repository version of filename.html
+
+git commit --ammend -m "Revert last changes"
+
+git checkout hash -- exploerers.html
+ " Retrive old version from chain
+
+git revert hash
+
+
+git clean
+ " remove junk
+
+" Local Ignore
+" File: .gitignore
+
+" logs/*.txt
+" # Demo/example
+" access.log
+" .DS_Store
+" *.zip
+" log/*.log.[0-9]
+" assets/photoshop/
+" passwords.php
+
+" Global Ignore
+git config --global core.excludesfile \.gitignore_global
+
+
+"
+

@@ -1,0 +1,14 @@
+ " Git is tracking my changes.
+
+git add first_file.txt
+git add .
+
+git status
+
+git diff
+ " compares working directory
+git diff --staged
+ " changes in staging area
+
+
+rm file_to_delete2.txt

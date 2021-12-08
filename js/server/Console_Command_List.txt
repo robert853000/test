@@ -1,0 +1,20 @@
+Terminal in Visual Studio Code
+
+
+npm install lodash
+npm install -g nodemon 
+nodemon
+npm install body-parser
+npm install express
+" allows client send request to server
+npm install mongoose
+npm install socket.io
+" from server to client when event happens
+
+npm init
+" generate file package.json
+npm init --yes
+" quick
+
+node server.js
+" start listening
